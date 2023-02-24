@@ -7,10 +7,12 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import SamplePageOne from './pages/SamplePageOne.jsx'
 import SamplePageTwo from './pages/SamplePageTwo.jsx'
 import SamplePageThree from './pages/SamplePageThree.jsx'
+import RouteChangeTracker from './util/RouteChangeTracker.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
+      <RouteChangeTracker />
       <NavBar />
       <div className={`mt-2`}>
         <Routes>
