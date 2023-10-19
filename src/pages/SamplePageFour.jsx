@@ -10,7 +10,7 @@ export default function SamplePageFour() {
       import.meta.env.VITE_REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID,
     )
     ReactGA.send({
-      hitType: 'page-view',
+      hitType: 'pageview',
       page: location.pathname,
       screenName: '4번 화면',
     })

@@ -9,8 +9,13 @@ export default function SamplePageOne() {
     ReactGA.initialize(
       import.meta.env.VITE_REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID,
     )
-    ReactGA.set({ page: location.pathname })
-    ReactGA.send('pageview')
+    // ReactGA.set({ page: location.pathname })
+    // ReactGA.send('pageview')
+    ReactGA.send('pageview', 'screenview', {
+      // hitType: 'pageview',
+      page: location.pathname,
+      screenName: '1번 화면',
+    })
   }, [location])
 
   return (
