@@ -14,6 +14,9 @@ export default function SamplePageTwo() {
     ReactGA.send({
       hitType: 'pageview',
       page: location.pathname,
+    })
+    ReactGA.send({
+      hitType: 'screenview',
       screenName: '2번 화면',
     })
   }, [location])
