@@ -12,7 +12,7 @@ import RouteChangeTracker from './util/RouteChangeTracker.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <RouteChangeTracker />
+      {/*<RouteChangeTracker />*/}
       <NavBar />
       <div className={`mt-2`}>
         <Routes>
