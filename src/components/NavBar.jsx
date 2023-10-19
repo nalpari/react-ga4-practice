@@ -43,6 +43,12 @@ export default function NavBar() {
             >
               SamplePageThree
             </Link>
+            <Link
+              to="/page-four"
+              className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
+            >
+              SamplePageFour
+            </Link>
           </div>
           <div>
             <a
